@@ -17,8 +17,7 @@ cargo build --release
 --validator \
 --base-path /tmp/relay/alice \
 --chain /tmp/raw-local-chainspec.json \
---port 30333 \
---ws-port 9944
+--port 30333
 
 ## 2nd Node
 
@@ -27,5 +26,10 @@ cargo build --release
 --validator \
 --base-path /tmp/relay-bob \
 --chain /tmp/raw-local-chainspec.json \
---port 30334 \
---ws-port 9945
+--port 30334
+
+https://github.com/paritytech/polkadot/tree/master/node/service/chain-specs
+
+https://raw.githubusercontent.com/paritytech/polkadot/master/node/service/chain-specs/polkadot.json
+
+https://paritytech.github.io/substrate/master/sc_service/struct.GenericChainSpec.html
